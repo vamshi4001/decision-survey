@@ -1,0 +1,107 @@
+Sure, here is the HTML form based on the decision-making questionnaire:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Decision Survey (@shaanvp)</h1>
+    <form>
+        <div class="form-group">
+            <label for="decision">1. What is the decision?</label>
+            <textarea id="decision" name="decision" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>2. What am I feeling?</label>
+            <label><input type="radio" name="feeling" value="Extreme fear" required> Extreme fear</label>
+            <label><input type="radio" name="feeling" value="Some fear"> Some fear</label>
+            <label><input type="radio" name="feeling" value="Neutral or Bored"> Neutral or Bored</label>
+            <label><input type="radio" name="feeling" value="Some greed"> Some greed</label>
+            <label><input type="radio" name="feeling" value="Extreme greed"> Extreme greed</label>
+        </div>
+        <div class="form-group">
+            <label for="decisive-reason">3. What is the 1-decisive-reason to do this?</label>
+            <textarea id="decisive-reason" name="decisive-reason" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="secondary-benefits">4. What are the secondary benefits?</label>
+            <textarea id="secondary-benefits" name="secondary-benefits" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>5. If I took all secondary benefits away, would I still make this decision?</label>
+            <label><input type="radio" name="secondary-benefits-decision" value="No" required> No</label>
+            <label><input type="radio" name="secondary-benefits-decision" value="Maybe"> Maybe</label>
+            <label><input type="radio" name="secondary-benefits-decision" value="Yes"> Yes</label>
+        </div>
+        <div class="form-group">
+            <label for="trigger">6. What triggered the decision?</label>
+            <textarea id="trigger" name="trigger" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="alternatives">7. What alternatives did I consider:</label>
+            <textarea id="alternatives" name="alternatives" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="reversible">8. Is this a reversible decision?</label>
+            <textarea id="reversible" name="reversible" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="right-move">9. What makes me think this is the right move?</label>
+            <textarea id="right-move" name="right-move" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="wrong-move">10. What makes me think this might be the wrong move?</label>
+            <textarea id="wrong-move" name="wrong-move" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="upside">11. Upside if right:</label>
+            <textarea id="upside" name="upside" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="downside">12. Downside if wrong:</label>
+            <textarea id="downside" name="downside" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="followup">13. What follow-up is important to make this decision more successful?</label>
+            <textarea id="followup" name="followup" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="success-criteria">14. When and how will I know if this was a success?</label>
+            <textarea id="success-criteria" name="success-criteria" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="scenario">15. Walk through the scenario. What are the next 5 things to happen after you do this?</label>
+            <textarea id="scenario" name="scenario" rows="3" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+```
+
+This HTML form captures all the questions from the decision-making questionnaire, providing a structured way for users to fill in their responses.
